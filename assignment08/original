@@ -1,0 +1,66 @@
+digraph BST {
+node [shape=record]
+good[label="<L> |<D> good|<R> "]
+assignment[label="<L> |<D> assignment|<R> "]
+are[label="<L> |<D> are|<R> "]
+and[label="<L> |<D> and|<R> "]
+are:L -> and:D
+assignment:L -> are:D
+binary[label="<L> |<D> binary|<R> "]
+bad[label="<L> |<D> bad|<R> "]
+be[label="<L> |<D> be|<R> "]
+bad:R -> be:D
+binary:L -> bad:D
+data[label="<L> |<D> data|<R> "]
+bst[label="<L> |<D> bst|<R> "]
+constructed[label="<L> |<D> constructed|<R> "]
+careful[label="<L> |<D> careful|<R> "]
+can[label="<L> |<D> can|<R> "]
+careful:L -> can:D
+constructed:L -> careful:D
+bst:R -> constructed:D
+data:L -> bst:D
+fast[label="<L> |<D> fast|<R> "]
+deletions[label="<L> |<D> deletions|<R> "]
+fast:L -> deletions:D
+data:R -> fast:D
+binary:R -> data:D
+assignment:R -> binary:D
+good:L -> assignment:D
+luck[label="<L> |<D> luck|<R> "]
+great[label="<L> |<D> great|<R> "]
+if[label="<L> |<D> if|<R> "]
+in[label="<L> |<D> in|<R> "]
+is[label="<L> |<D> is|<R> "]
+insertions[label="<L> |<D> insertions|<R> "]
+is:L -> insertions:D
+in:R -> is:D
+if:R -> in:D
+great:R -> if:D
+luck:L -> great:D
+on[label="<L> |<D> on|<R> "]
+not[label="<L> |<D> not|<R> "]
+on:L -> not:D
+search[label="<L> |<D> search|<R> "]
+order[label="<L> |<D> order|<R> "]
+search:L -> order:D
+trees[label="<L> |<D> trees|<R> "]
+structures[label="<L> |<D> structures|<R> "]
+searches[label="<L> |<D> searches|<R> "]
+structures:L -> searches:D
+super[label="<L> |<D> super|<R> "]
+the[label="<L> |<D> the|<R> "]
+too[label="<L> |<D> too|<R> "]
+the:R -> too:D
+super:R -> the:D
+structures:R -> super:D
+trees:L -> structures:D
+which[label="<L> |<D> which|<R> "]
+tricky[label="<L> |<D> tricky|<R> "]
+which:L -> tricky:D
+trees:R -> which:D
+search:R -> trees:D
+on:R -> search:D
+luck:R -> on:D
+good:R -> luck:D
+}
